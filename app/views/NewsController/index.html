@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CODE: News/Announcements</title>
+    <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+    <link rel="stylesheet" type="text/css" href="@{'/public/stylesheets/main.css'}">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="@{'/public/images/logo.png'}">
+        <input class="search" type="text" placeholder="Search..."/>
+        <a href="/application/logout"><img class="logout" src="@{'/public/images/logout.png'}"></a>
+    </header>
+    <div>
+        <div class="left-side">
+            <div class="profile">
+                <img class="avatar" src="@{'public/images/avatar.png'}">
+                <div class="username">${email}</div>
+            </div>
+            <div style="height: 2px; background-color: white; margin-top: 30px; margin-right: 10px; margin-left: 10px"></div>
+            <div style="padding-top: 20px">
+                <a class="item active" href="#">News/Announcements</a>
+                <a class="item" href="#">Calendar</a>
+                <a class="item" href="#">Messages</a>
+                <a class="item" href="#">Projects</a>
+                <a class="item" href="#">CodeDrive</a>
+            </div>
+        </div>
+        <div class="right-side">
+            <h1 class="news">News/Announcements</h1>
+            #{list items:news, as:'eachNews'}
+            <div class="title">${eachNews.title}</div>
+            <div class="date">${eachNews.getDate()}</div>
+            <img class="img" src="${eachNews.imageUrl}">
+            <div class="text">${eachNews.text}</div>
+            <hr>
+            #{/list}
+        </div>
+    </div>
+</body>
+</html>

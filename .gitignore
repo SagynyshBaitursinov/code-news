@@ -1,0 +1,10 @@
+server.pid
+*.iml
+*.ipr
+*.iws
+tmp
+logs
+.settings/
+.idea/
+.project
+.classpath

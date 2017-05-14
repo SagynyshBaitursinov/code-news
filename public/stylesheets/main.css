@@ -1,0 +1,149 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+
+.left-side {
+    background-color: #4B4D4F;
+    width: 20%;
+    height: 100vh;
+    float: left;
+}
+
+.news {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.right-side {
+    width: 79%;
+    float: right;
+}
+
+header {
+    height: 100px;
+    background-color: #222527;
+    text-align: center;
+}
+
+.logo {
+    padding-top: 28px;
+    margin-left: 25px;
+    float: left;
+}
+
+.login-page {
+    background-color: #222527;
+}
+
+.login-form {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.login-field {
+    margin: 10px auto;
+    display: block;
+}
+
+.hint {
+    margin-top: 20px;
+    color: grey;
+}
+
+.profile {
+    margin-top: 15px;
+    margin-left: 25px;
+    text-align: center;
+}
+
+.username {
+    padding-top: 15px;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+}
+
+.avatar {
+    background-color: grey;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+}
+
+.item {
+    margin-left: 20px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.search {
+    background-color: white;
+    height: 25px;
+    width: 300px;
+    margin-left: -100px;
+    margin-top: 35px;
+    border-radius: 0px;
+    border: none;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+.logout {
+    float: right;
+    height: 50px;
+    margin-right: 25px;
+    margin-top: 23px;
+}
+
+.email, .password {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #CBCBCB;
+    height: 40px;
+    width: 300px;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+}
+
+.login {
+    background-color: #CBCBCB;
+    height: 40px;
+    width: 150px;
+    border: none;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    border-radius: 2px;
+}
+
+.img {
+    max-height: 200px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.date {
+    font-size: 12px;
+    color: grey;
+    margin-bottom: 10px;
+}
+
+.text {
+    margin-bottom: 30px;
+}
+
+.title {
+    margin-top: 10px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+html {
+    font-family: 'Lato', sans-serif;
+}

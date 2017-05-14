@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CODE: Login</title>
+    <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
+    <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
+</head>
+<body class="login-page">
+    <form class="login-form" action="@{Application.authorize()}" method="post">
+        <img class="login-field" src="@{'/public/images/logo.png'}">
+        <input class="login-field email" type="text" name="email" placeholder="Your CODE email">
+        <input class="login-field password" type="password" name="password" placeholder="Your password">
+        <button class="login-field login" type="submit">Login</button>
+        <div class="login-field hint">//test@code.berlin 123456</div>
+    </form>
+</body>
+</html>
